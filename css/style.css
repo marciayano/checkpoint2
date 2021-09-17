@@ -1,3 +1,55 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
+    text-align: center;
+}
+
+label{
+    font-size: 40px;
+    
+}
+
+.faixaetaria{
+    background-color: red;
+    
+}
+
+.faixaetaria input, .interesse input{
+    display: inline-block;
+    margin-right: 10px;
+}
+    
+
+input{
+    transition: all .5s ease-in-out;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+input:hover{
+    transform: scale(1.1);
+    background-color:rgba(73, 189, 171, 0.349) ;
+    overflow: hidden;
+
+}
+
+select{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 100px;
 }
