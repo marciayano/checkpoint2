@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Fale Conosco - Página 2</title>
+    <title>Fale Conosco - RJ - BRASIL</title>
 </head>
 <body>
     <h1>FALE CONOSCO</h1>
     <hr>
     <form action="/faleconosco" method="POST">
-        <p>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" maxlength="100" placeholder="Insira seu nome">
-        </p>
-
-        <p>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Insira seu email" required>
-        </p>
-        
-        <p>
-            <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="(xx) xxxxx xxxx" required>
-        </p>
-
-        <p>
-            <label for="nascimento">Data de nascimento</label>
-            <input type="date" name="nascimento" id="nascimento">
-        </p>
+        <div class="caixas">
+            <p>
+                <label for="nome"><legend>Nome</legend></label>
+                <input type="text" name="nome" id="nome" maxlength="100" placeholder="Insira seu nome">
+            </p>
+            <p>
+                <label for="email"><legend>Email</legend></label>
+                <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+            </p>
+            
+            <p>
+                <label for="telefone"><legend>Telefone</legend></label>
+                <input type="tel" name="telefone" id="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="99-99999-9999" required>
+            </p>
+            <p>
+                <label for="nascimento"><legend>Data de nascimento</legend></label>
+                <input type="date" name="nascimento" id="nascimento">
+            </p>
+        </div>
        
-        <p>
-            <div class = "faixaetaria">
-                <label>Faixa etária: </label>
-                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="maiordeidade"> Acima de 18
-                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="menordeidade"> Menor que 18
-            </div>
-        </p>
+       
+            <p>
+                <div class = "faixaetaria">
+                    <label><legend>Faixa etária:</legend> </label>
+                    <INPUT TYPE="RADIO" NAME="OPCAO" id="maiordeidade"> 
+                    <label for="maiordeidade">Acima de 18</label>
+                    <INPUT TYPE="RADIO" NAME="OPCAO" id="menordeidade"> 
+                    <label for="menordeidade">Menor de 18</label>
+                </div>
+            </p>
+        
 
         <p>
-           <label> Qual seu ponto preferido na cidade? </label>
+           <label> <legend>Qual seu ponto preferido na cidade?</legend> </label>
             <select name="pontoturistico">
                 <option value="">Escolha uma opção</option>
                 <option value="copacabana">Copacabana</option>
@@ -52,11 +57,14 @@
         </p>
 
         <p>
-                <div class="interesse">
-                    <label for="interesse">INTERESSE: </label>
-                    <INPUT TYPE="checkbox" NAME="interesse" VALUE="interesse"> Turista
-                    <INPUT TYPE="checkbox" NAME="interesse" VALUE="interesse"> Residente
-                    <INPUT TYPE="checkbox" NAME="interesse" VALUE="interesse"> Estudante
+                <div class= "interesse">
+                    <label for="interesse"><legend>Interesse: </legend></label>
+                    <INPUT TYPE="checkbox" NAME="interesse" id="interesse"> 
+                    <label for="|">Turista</label>
+                    <INPUT TYPE="checkbox" NAME="interesse" id="interesse"> 
+                    <label for="|">Residente</label>
+                    <INPUT TYPE="checkbox" NAME="interesse" id="interesse"> 
+                    <label for="|">Estudante</label>
                 </div>        
         </p>
         <button type="submit">ENVIAR</button>
@@ -65,4 +73,14 @@
       </form>
 
 </body>
+<hr>
+<footer>
+    <h2>Mídias sociais do RJ</h2>
+    <p>
+    <a href="https://www.facebook.com/PrefeituradoRio" target="_blank"> <img src="img/icone-facebook.png" alt="Facebook da Prefeitura do Rio de Janeiro"></a>
+    <a href="https://twitter.com/Prefeitura_Rio" target="_blank"> <img src="img/icone-twitter.png" alt="Twitter da Prefeitura do Rio de Janeiro"></a>
+    <a href="https://www.instagram.com/prefeitura_rio/" target="_blank"> <img src="img/icone-instagram.png" alt="instagram da Prefeitura do Rio de Janeiro"></a><br>
+    <iframe src="https://giphy.com/embed/atajvz5OSnwlg07vXN" width="10%" height="10%" style="position:center" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+    </p>
+</footer>
 </html>

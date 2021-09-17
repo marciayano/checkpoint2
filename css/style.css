@@ -1,31 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
     text-align: center;
+    background: linear-gradient(#6CACD3,white);
 }
 
 label{
-    font-size: 40px;
+    font-size: 30px;
     
 }
 
-.faixaetaria{
-    background-color: red;
-    
+.faixaetaria label, .interesse label{
+    margin-right: 15px;
+    text-align: center;
+
+}
+
+legend{
+    font-weight: bolder;
 }
 
 .faixaetaria input, .interesse input{
     display: inline-block;
-    margin-right: 10px;
+
 }
-    
+   
+.caixas input{
+ width: 250px;
+ height: 25px;
+}
+
 
 input{
     transition: all .5s ease-in-out;
@@ -36,13 +47,17 @@ input{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     
+}
+
+input[type="radio"]{
+    height: 15px;
+    width: 15px;
 }
 
 input:hover{
     transform: scale(1.1);
-    background-color:rgba(73, 189, 171, 0.349) ;
+    background-color:rgba(229, 255, 0, 0.411) ;
     overflow: hidden;
 
 }
@@ -51,5 +66,29 @@ select{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 25px;
     padding: 10px;
-    border-radius: 100px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+button{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+    margin: 5px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: rgba(100, 132, 163, 0.705);
+}
+
+footer{
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+    font-size: 20px;
+    text-align: center;
+    
 }
