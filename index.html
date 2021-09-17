@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Fale Conosco - RJ - BRASIL</title>
+</head>
+
+<body>
+    <h1>FALE CONOSCO</h1>
+    <hr>
+    <form action="/faleconosco" method="POST">
+        <div class="caixas">
+            <p>
+                <label for="nome">
+                    <legend>Nome</legend>
+                </label>
+                <input type="text" name="nome" id="nome" maxlength="100" placeholder="Insira seu nome">
+            </p>
+            <p>
+                <label for="email">
+                    <legend>Email</legend>
+                </label>
+                <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+            </p>
+
+            <p>
+                <label for="telefone">
+                    <legend>Telefone</legend>
+                </label>
+                <input type="tel" name="telefone" id="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="99-99999-9999" required>
+            </p>
+            <p>
+                <label for="nascimento">
+                    <legend>Data de nascimento</legend>
+                </label>
+                <input type="date" name="nascimento" id="nascimento">
+            </p>
+        </div>
+
+
+        <p>
+        <div class="faixaetaria">
+            <label>
+                <legend>Faixa etária:</legend>
+            </label>
+            <INPUT TYPE="RADIO" NAME="OPCAO" id="maiordeidade">
+            <label for="maiordeidade">Acima de 18</label>
+            <INPUT TYPE="RADIO" NAME="OPCAO" id="menordeidade">
+            <label for="menordeidade">Menor de 18</label>
+        </div>
+        </p>
+
+
+        <p>
+            <label>
+                <legend>Qual seu ponto preferido na cidade?</legend>
+            </label>
+            <select name="pontoturistico">
+                <option value="">Escolha uma opção</option>
+                <option value="copacabana">Copacabana</option>
+                <option value="cristoredentor">Cristo Redentor</option>
+                <option value="paodeacucar">Pão de Açúcar</option>
+                <option value="carnaval">Carnaval</option>
+            </select>
+        </p>
+
+        <p>
+        <div class="interesse">
+            <label for="interesse">
+                <legend>Interesse: </legend>
+            </label>
+            <INPUT TYPE="checkbox" NAME="interesse" id="interesse">
+            <label for="|">Turista</label>
+            <INPUT TYPE="checkbox" NAME="interesse" id="interesse">
+            <label for="|">Residente</label>
+            <INPUT TYPE="checkbox" NAME="interesse" id="interesse">
+            <label for="|">Estudante</label>
+        </div>
+        </p>
+        <button type="submit">ENVIAR</button>
+        <button type="reset">LIMPAR DADOS</button>
+
+    </form>
+
+</body>
+<hr>
+<footer>
+    <h2>Mídias sociais do RJ</h2>
+    <p>
+        <a href="https://www.facebook.com/PrefeituradoRio" target="_blank"> <img src="img/icone-facebook.png"
+                alt="Facebook da Prefeitura do Rio de Janeiro"></a>
+        <a href="https://twitter.com/Prefeitura_Rio" target="_blank"> <img src="img/icone-twitter.png"
+                alt="Twitter da Prefeitura do Rio de Janeiro"></a>
+        <a href="https://www.instagram.com/prefeitura_rio/" target="_blank"> <img src="img/icone-instagram.png"
+                alt="instagram da Prefeitura do Rio de Janeiro"></a><br>
+        <iframe src="https://giphy.com/embed/atajvz5OSnwlg07vXN" width="10%" height="10%" style="position:center"
+            frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <p>
+    </p>
+</footer>
+
+</html>
